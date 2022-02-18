@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		
-		<CityPicker ref="picker" />
+		<CityPicker ref="picker" @confirm="getCity"/>
 	</div>
 </template>
 
@@ -44,8 +44,7 @@
 			return {
 				num: 1681,
 				phone: '',
-				city: '',
-				showCity: false
+				city: ''
 			}
 		},
 		created() {
@@ -61,9 +60,11 @@
 				this.phone = this.phone.replace(/[^\d]/g, '')
 			},
 			tabCity() {
-				console.log(111111)
-				this.showCity = true
 				this.$refs.picker.showPicker()
+			},
+			getCity(data) {
+				console.log(data)
+				this.city = data.city.text
 			}
 		}
 	}
