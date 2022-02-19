@@ -68,6 +68,7 @@
 
 <style scoped lang="less">
 	.banner {
+		line-height: 0;
 		img {
 			width: 100%;
 		}

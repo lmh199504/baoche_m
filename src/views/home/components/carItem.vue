@@ -43,7 +43,11 @@
 			<div class="wechet">
 				<img src="../../../assets/images/home/wechat.png" >
 				<div class="wechet_num">微信：LVCHEHU0000LVCHEHU0000</div>
-				<van-button size="mini" color="#05D1E3">复制</van-button>
+				<van-button size="mini" color="#05D1E3" 
+					v-clipboard:copy="wechet"
+					v-clipboard:success="copySuccess"
+					v-clipboard:error="copyError"
+				>复制</van-button>
 			</div>
 		</div>
 		<div class="btn_wrapper">
@@ -68,7 +72,8 @@
 		data() {
 			return {
 				open: false,
-				showPopup: false
+				showPopup: false,
+				wechet: "lmh123456"
 			}
 		},
 		methods: {
@@ -77,6 +82,12 @@
 			},
 			askMoney() {
 				this.showPopup = true
+			},
+			copySuccess() {
+				this.$toast("复制成功")
+			},
+			copyError() {
+				this.$toast("复制失败")
 			}
 		}
 	}
