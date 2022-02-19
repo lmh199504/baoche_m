@@ -1,7 +1,9 @@
 <template>
 	<div class="layout">
 		<div class="route_view">
-			<router-view />
+			<keep-alive :include="['Home']">
+				<router-view />
+			</keep-alive>
 		</div>
 		<TabBar />
 	</div>
@@ -28,8 +30,9 @@
 		width: 100%;
 		.route_view{
 			flex: 1;
-			overflow: auto;
+			overflow-y: auto;
 			padding-bottom: 20px;
+			overflow-x: hidden;
 		}
 	}
 </style>

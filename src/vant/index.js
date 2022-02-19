@@ -35,7 +35,8 @@ import {
 	NoticeBar,
 	Search,
 	Tabbar,
-	TabbarItem
+	TabbarItem,
+	Sticky
 } from 'vant'
 
 Vue.use(Icon)
@@ -73,3 +74,4 @@ Vue.use(NoticeBar)
 Vue.use(Search)
 Vue.use(Tabbar)
 Vue.use(TabbarItem)
+Vue.use(Sticky)

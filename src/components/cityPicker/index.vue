@@ -1,5 +1,5 @@
 <template>
-	<van-popup v-model="show" round position="bottom">
+	<van-popup v-model="show" round position="bottom" :get-container="getEle">
 		<van-picker show-toolbar title="城市选择" :columns="columns" @confirm="confirm" @cancel="cancel" />
 	</van-popup>
 </template>
@@ -69,6 +69,9 @@
 		methods: {
 			showPicker() {
 				this.show = true
+			},
+			getEle() {
+				return document.getElementsByTagName('body')[0]
 			},
 			confirm(val) {
 				const province = this.columns.find(item => item.text == val[0])

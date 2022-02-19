@@ -6,7 +6,7 @@ module.exports = {
 			rootValue({
 				file
 			}) {
-				return file.indexOf('vant') !== -1 ? 37.5 : 75;
+				return file.indexOf('vant') !== -1 ? 37.5 : 100;
 			},
 			propList: ['*'],
 		},

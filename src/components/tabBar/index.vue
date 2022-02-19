@@ -57,9 +57,11 @@
 <style scoped lang="less">
 	.tabBar {
 		width: 100%;
-		height: 100px;
+		height: 133px;
 		box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.1);
 		background: #fff;
+		position: relative;
+		// z-index: 10;
 		.tabText{
 			font-size: 20px;
 		}
