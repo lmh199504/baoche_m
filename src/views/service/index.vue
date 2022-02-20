@@ -6,10 +6,18 @@
 			<img src="../../assets/images/service/service03.png" >
 			<img src="../../assets/images/service/service04.png" >
 		</div>
+		
+		<FixMenu />
 	</div>
 </template>
 
 <script>
+	import FixMenu from '@/components/fixMenu'
+	export default {
+		components: {
+			FixMenu
+		}
+	}
 </script>
 
 <style scoped lang="less">

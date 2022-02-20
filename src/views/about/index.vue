@@ -35,17 +35,20 @@
 			包车邦致力成为中国最佳的旅游包车服务提供商，正努力打造成综合性汽车服
 			务领导品牌。并立志为推动中国的汽车租赁产业和汽车工业的发展而努力。
 		</div>
-		
+		<FixMenu />
 	</div>
 </template>
 
 <script>
 	import DotTitle from '@/components/dotTitle'
+	import FixMenu from '@/components/fixMenu'
 	export default {
 		components: {
-			DotTitle
+			DotTitle,
+			FixMenu
 		}
 	}
+	
 </script>
 
 <style scoped lang="less">

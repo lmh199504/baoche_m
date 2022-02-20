@@ -50,11 +50,16 @@
 			</div>
 
 		</div>
+		<FixMenu />
 	</div>
 </template>
 
 <script>
+	import FixMenu from '@/components/fixMenu'
 	export default{
+		components: {
+			FixMenu
+		},
 		methods: {
 			tabPrev() {
 				this.$refs.swiper.prev()

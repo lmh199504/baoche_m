@@ -5,10 +5,17 @@
 			<img src="../../assets/images/brand/brand02.png" >
 			<img src="../../assets/images/brand/brand03.png" >
 		</div>
+		<FixMenu />
 	</div>
 </template>
 
 <script>
+	import FixMenu from '@/components/fixMenu'
+	export default {
+		components: {
+			FixMenu
+		}
+	}
 </script>
 
 <style scoped lang="less">
